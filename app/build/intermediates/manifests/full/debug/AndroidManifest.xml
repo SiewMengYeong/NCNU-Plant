@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tw.edu.ncnu.csie.ncnuplant"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="tw.edu.ncnu.csie.ncnuplant.MainActivity"
+            android:label="暨大植物導覽" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tw.edu.ncnu.csie.ncnuplant.plant"
+            android:label="暨大植物導覽" >
+            <intent-filter>
+                <action android:name="tw.edu.ncnu.csie.plant" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tw.edu.ncnu.csie.ncnuplant.search"
+            android:label="暨大植物導覽" >
+            <intent-filter>
+                <action android:name="tw.edu.ncnu.csie.search" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tw.edu.ncnu.csie.ncnuplant.map"
+            android:label="暨大植物導覽" >
+            <intent-filter>
+                <action android:name="tw.edu.ncnu.csie.map" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tw.edu.ncnu.csie.ncnuplant.plant2"
+            android:label="暨大植物導覽" >
+            <intent-filter>
+                <action android:name="tw.edu.ncnu.csie.plant2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tw.edu.ncnu.csie.ncnuplant.search2"
+            android:label="暨大植物導覽" >
+            <intent-filter>
+                <action android:name="tw.edu.ncnu.csie.search2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tw.edu.ncnu.csie.ncnuplant.plant3"
+            android:label="暨大植物導覽" >
+            <intent-filter>
+                <action android:name="tw.edu.ncnu.csie.plant3" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
